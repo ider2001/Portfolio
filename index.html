@@ -22,26 +22,13 @@
 
 <body>
     <header>
-        <div>
+        <div class="menu">
             <a href="index.html"> ISE</a>
+            <nav class="navbar">
+                <a href="#section_2">Projekter</a>
+                <a href="#section_5">Kontakt</a>
+            </nav>
         </div>
-
-
-
-        <nav class="navbar">
-            <div class="navLiBg">
-                <ul class="menu">
-                    <li><a href="#section_3">Projekter</a></li>
-                    <li><a href="#section_5">Kontakt</a></li>
-
-                </ul>
-            </div>
-            <div class="burger">
-                <div class="line"></div>
-
-                <div class="line"></div>
-            </div>
-        </nav>
     </header>
 
     <main>
@@ -56,26 +43,33 @@
 
 
         </section>
-        <div id="video">
-            <video src=""></video>
-        </div>
 
-        <section class="section_2">
+
+        <section id="section_2" class="full-bleed">
             <div class="pargraf">
                 <h2>Projekter</h2>
-                <p>Her finder du nogle udvalgte projekter fra mit 1. semester til og med mit 3. semester, på
-                    multimediedesign uddannelsen. <br>
-                    Jeg har valgt netop disse projekter for at fremvise forskellige udviklet evner og roller vi har
-                    arbejdet med igennem semestrene. <br>
-                </p>
+                <div class="grid
+            ">
+                    <div>
+                        <p>Her finder du nogle udvalgte projekter fra mit 1. semester til og med mit 3. semester, på
+                            multimediedesign uddannelsen. <br>
+                            Jeg har valgt netop disse projekter for at fremvise forskellige projekter og roller vi har
+                            arbejdet med igennem semestrene. <br>
+                        </p>
+                    </div>
+                    <div>
+                        <p>Man ser igennem projekterne, udviklingen i skilsæt og forståelse for mulighederne i
+                            Multimediedesign. Flere projeketer er lavet i grupper og afspejler derfor forskellige
+                            perspektiver og færdigheder. Hvor andre er lavet på egen hånd, med et klart udstyk i
+                            personlig
+                            stil og preferencer. </p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p id="stortP">P</p>
-                <img id="img2" src="img/kode.png" alt="">
-            </div>
+
         </section>
 
-        <section id="section_3">
+        <section id="section_3" class="full-bleed">
 
             <button class="arrow left">&#10094;</button>
 
@@ -90,31 +84,10 @@
                             <img src="img/pforside.png" alt="Portfolio" class="overImg">
                             <div class="overlay">
                                 <p class="styling">Portfolio</p>
-                                <a class="styling" href="Port.html">Se mere</a>
+                                <a class="styling" href="https://portfolioisekea.netlify.app/">Se mere</a>
 
                             </div>
                         </div>
-                        <div class="overlay_container">
-                            <img src="img/avis.png" alt="Soundwheel" class="overImg">
-                            <div class="overlay">
-                                <p class="styling">xxx</p>
-                                <a class="styling" href="https://soundwheel-gr2.netlify.app/">Se mere</a>
-
-                            </div>
-                        </div>
-                        <div class="overlay_container">
-                            <img src="img/avis.png" alt="Emne site" class="overImg">
-                            <div class="overlay">
-                                <p class="styling">xxx</p>
-                                <a class="styling" href="">Se mere</a>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- SLIDE 2 -->
-                    <div class="slide">
                         <div class="overlay_container">
                             <img src="img/sfordie.png" alt="Sex Beat Records" class="overImg">
                             <div class="overlay">
@@ -128,24 +101,18 @@
                             <img src="img/wforside.png" alt="Soundwheel" class="overImg">
                             <div class="overlay">
                                 <p class="styling">Dankort</p>
-                                <a class="styling" href="SoundProj.html">Se mere</a>
+                                <a class="styling" href="https://soundwheel-gr2.netlify.app/">Se mere</a>
 
                             </div>
                         </div>
 
-                        <div class="overlay_container">
-                            <img src="img/dforside.png" alt="Dankort projekt" class="overImg">
-                            <div class="overlay">
-                                <p class="styling">Dankort</p>
-                                <a class="styling" href="DanProj.html">Se mere</a>
-                            </div>
-                        </div>
                     </div>
 
-                    <!-- SLIDE 3 -->
+                    <!-- SLIDE 2 -->
                     <div class="slide">
                         <div class="overlay_container">
-                            <img src="img/todoliste.png" alt="Todo liste class=" overImg">
+                            <img src="img/todoliste.png" alt="Todo liste" class="overImg">
+
                             <div class="overlay">
                                 <p class="styling">Todo List</p>
                                 <a class="styling" href="https://todolistobg.netlify.app/">Se mere</a>
@@ -159,6 +126,19 @@
                                 <a class="styling" href="https://crtvesopgave.netlify.app/">Se mere</a>
                             </div>
                         </div>
+
+
+                        <div class="overlay_container">
+                            <img src="img/dforside.png" alt="Dankort projekt" class="overImg">
+                            <div class="overlay">
+                                <p class="styling">Dankort</p>
+                                <a class="styling" href="https://dankort.netlify.app/">Se mere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 3 -->
+                    <div class="slide">
 
                         <div class="overlay_container">
                             <img src="img/emnesiteforside.png" alt="emnesite" class="overImg">
@@ -186,38 +166,61 @@
                 <div class="kompetencerUl">
                     <h2>Kompetencer</h2>
                     <div class="navigLi">
-                        <p>Erfaring</p>
-                        <p>MultiMedie Design</p>
-                        <p>Frontend</p>
+                        <p data-filter="erfaring">Erfaring</p>
+                        <p data-filter="mmd">MultiMedie Design</p>
+                        <p data-filter="frontend">Frontend</p>
                     </div>
 
                     <div class="kompetenceknapper">
-                        <p>Video og foto</p>
-                        <p>Astro</p>
-                        <p>Vanilla Javascript</p>
-                        <p>Next.js</p>
-                        <p>HTML & CSS</p>
-                        <p>Motion Graphics</p>
-                        <p>Adobe Creative Cloud</p>
-                        <p>React</p>
-                        <p>Figma</p>
-                        <p>Tailwind CSS</p>
-                        <p>Canva & Affinity</p>
-                        <p>Grafisk design</p>
-                        <p>Ledelse</p>
-                        <p>Visuel identitet & Kommunikation</p>
-                        <p>Content Creation</p>
-                        <p>Kunde & serviceforståelse</p>
-                        <p>Organisering & eventplanlægning</p>
-                        <p>Designudvikling</p>
-                        <p>Samarbejde & selvstændighed</p>
-                        <p>Digital indhold & SoMe strategi</p>
+                        <div class="mmd">
+                            <p>Video og foto</p>
+                            <p>Motion Graphics</p>
+                            <p>Adobe Creative Cloud</p>
+                            <p>Figma</p>
+                            <p>Canva & Affinity</p>
+                            <p>Visuel identitet & Kommunikation</p>
+                            <p>Content Creation</p>
+                            <p>Designudvikling</p>
+                            <p>Grafisk design</p>
+                            <p>Digital indhold & SoMe strategi</p>
+
+                        </div>
+
+                        <div class="frontend">
+                            <p>Astro</p>
+                            <p>Vanilla Javascript</p>
+                            <p>Next.js</p>
+                            <p>HTML & CSS</p>
+                            <p>React</p>
+                            <p>Tailwind CSS</p>
+                            <p>Github</p>
+                        </div>
+
+                        <div class="erfaring">
+                            <p>Ledelse</p>
+                            <p>Kunde & serviceforståelse</p>
+                            <p>Organisering & eventplanlægning</p>
+                            <p>Samarbejde & selvstændighed</p>
+                        </div>
+
                     </div>
                 </div>
                 <div>
                     <img class="img3" src="img/idabillede.JPEG" alt="">
                 </div>
             </div>
+
+            <div id="video">
+                <div class="karussel-container ">
+                    <div class="karussel-wrapper">
+                        <div class="karussel-text">WORK · BREAK · LIFE · BALANCE · WORK · BREAK · LIFE · BALANCE · WORK
+                            ·
+                            BREAK · LIFE ·
+                            BALANCE · WORK · BREAK · LIFE · BALANCE · WORK · BREAK · LIFE · BALANCE</div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <section id="section_5">
 
@@ -232,21 +235,12 @@
                 <p>Ida Sofie Erichsen</p>
             </div>
 
-            <div class="karussel-container">
-                <div class="karussel-wrapper">
-                    <div class="karussel-text">WORK · BREAK · LIFE · BALANCE · WORK · BREAK · LIFE · BALANCE · WORK ·
-                        BREAK · LIFE ·
-                        BALANCE · WORK · BREAK · LIFE · BALANCE · WORK · BREAK · LIFE · BALANCE</div>
-                </div>
-            </div>
         </section>
+        <h1 id="efternavn">ERICHSEN
+        </h1>
 
     </main>
 
-    <footer>
-        <h1 id="efternavn">ERICHSEN
-        </h1>
-    </footer>
 
 
 </body>

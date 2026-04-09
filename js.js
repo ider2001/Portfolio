@@ -1,26 +1,3 @@
-const burger = document.querySelector(".burger");
-const nav = document.querySelector("nav");
-const menu = document.querySelector(".menu");
-
-burger.addEventListener("click", burgerClick);
-function burgerClick() {
-  document.body.classList.toggle("menu-open");
-  burger.classList.toggle("active");
-  nav.classList.toggle("active");
-}
-menu.addEventListener("click", menuClick);
-function menuClick() {
-  burger.classList.remove("active");
-  nav.classList.remove("active");
-}
-
-// const knap = document.querySelector("button");
-
-// knap.addEventListener("click", readMoreBtn);
-// function readMoreBtn () {
-
-// }
-
 const track = document.querySelector(".carousel-track");
 const slides = Array.from(track.children);
 const nextButton = document.querySelector(".right");
@@ -40,4 +17,40 @@ prevButton.addEventListener("click", () => {
     currentIndex--;
     track.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".navigLi p");
+  const groups = document.querySelectorAll(".kompetenceknapper > div");
+
+  // Default: Multimediedesign aktiv
+  const defaultFilter = "mmd";
+
+  function showGroup(filter) {
+    groups.forEach((group) => {
+      group.classList.remove("active");
+      if (group.classList.contains(filter)) {
+        group.classList.add("active");
+      }
+    });
+  }
+
+  function setActiveButton(btn) {
+    filterButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+  }
+
+  // Klik-event
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.dataset.filter;
+      showGroup(filter);
+      setActiveButton(btn);
+    });
+  });
+
+  // Kør default ved load
+  const defaultBtn = document.querySelector(`[data-filter="${defaultFilter}"]`);
+  setActiveButton(defaultBtn);
+  showGroup(defaultFilter);
 });

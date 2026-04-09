@@ -1,8 +1,7 @@
-.section_2 {
+#section_2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
-  margin-bottom: 400px;
 }
 
 .section_4 {
